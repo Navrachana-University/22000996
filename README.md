@@ -23,9 +23,9 @@ This project implements a custom Hindi-language compiler using **Flex** and **Bi
 
 Make sure the following are installed in your Unix/Linux/WSL environment:
 
-1. **Flex** (Fast Lexical Analyzer): For generating the lexer.
-2. **Bison** (GNU Parser Generator): For generating the parser
-3. **GCC** (GNU Compiler Collection): For compiling the generated C code
+1. ```Flex``` (Fast Lexical Analyzer): For generating the lexer.
+2. ```Bison``` (GNU Parser Generator): For generating the parser
+3. ```GCC``` (GNU Compiler Collection): For compiling the generated C code
 4. A Unix-like environment (Linux, macOS, or WSL on Windows).
 
 
@@ -36,14 +36,19 @@ Make sure the following are installed in your Unix/Linux/WSL environment:
 ```bash
 bison -d parser.y
 flex lex.l
+```
 
 ### 2. Compile the Generated Code:
 
+```bash
 gcc lex.yy.c parser.tab.c main.c -o hindi_compiler
+```
 
 ### 3. Run the Compiler:
 
+```bash
 a.exe
+```
 
 The program will prompt you to enter your Hindi-style code. Type your code and press `Ctrl + Z` followed by `Enter` (to indicate EOF). The compiler will then output the generated Three Address Code (TAC).
 
@@ -52,11 +57,13 @@ The compiler uses Hindi-style keywords, supports only integer variables and basi
 
 ## **Example Input**
 
+```bash
 set_karo x = 10;
 kar_jab_tak {
   likho(x);
   set_karo x = x + 1;
 } jab_tak(x < 15);
+```
 
 ## **Example Execution**
 ![Output Screenshot](OUTPUT.png)
