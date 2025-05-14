@@ -1,4 +1,4 @@
-**Hindi Compiler Project**
+## **Hindi Compiler Project**
 
 **Author**
 **Name:** Mahi Prajapati  
