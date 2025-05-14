@@ -11,7 +11,7 @@
 
 This project implements a custom Hindi-language compiler using **Flex** and **Bison**. It supports Hindi-like syntax for programming constructs such as variable assignments, output commands, and loops (`kar_jab_tak`), converting them into **three-address code (TAC)** as intermediate representation. The goal is to provide a regional-language programming experience and demonstrate core compiler construction techniques including lexical analysis, parsing, semantic analysis, and TAC generation.
 
-**Key Features**
+## **Key Features**
 
 - **Hindi Keywords** for a regional-language programming experience
 - **Do-While Loop Support** using `kar_jab_tak` ... `jab_tak` (body runs first, then condition is checked)
@@ -19,7 +19,7 @@ This project implements a custom Hindi-language compiler using **Flex** and **Bi
 - **Three Address Code (TAC)** generation with temporary variables and labels
 - **Console Output** using `likho`
 
-**Prerequisites**
+## **Prerequisites**
 
 Make sure the following are installed in your Unix/Linux/WSL environment:
 
