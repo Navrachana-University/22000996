@@ -37,11 +37,11 @@ bison -d parser.y
 flex lex.l
 
 ### 2. Compile the Generated Code:
-```bash
+
 gcc lex.yy.c parser.tab.c main.c -o hindi_compiler
 
 ### 3. Run the Compiler:
-```bash
+
 a.exe
 
 The program will prompt you to enter your Hindi-style code. Type your code and press `Ctrl + Z` followed by `Enter` (to indicate EOF). The compiler will then output the generated Three Address Code (TAC).
@@ -50,7 +50,7 @@ The program will prompt you to enter your Hindi-style code. Type your code and p
 The compiler uses Hindi-style keywords, supports only integer variables and basic arithmetic operations, implements a do-while loop with `kar_jab_tak`, and displays error messages for invalid syntax.
 
 ## **Example Input**
-```bash
+
 set_karo x = 10;
 kar_jab_tak {
   likho(x);
