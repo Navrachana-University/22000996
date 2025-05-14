@@ -32,6 +32,7 @@ Make sure the following are installed in your Unix/Linux/WSL environment:
 ## **Compilation Steps**
 
 ### 1. Generate Lexer and Parser
+
 ```bash
 bison -d parser.y
 flex lex.l
