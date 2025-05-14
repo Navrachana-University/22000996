@@ -1,0 +1,5 @@
+set_karo x = 10;
+kar_jab_tak {
+    likho(x);
+    set_karo x = x + 1;
+} jab_tak (x < 15);
